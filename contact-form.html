@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <form action="https://www.formsubmit.co/id.inyang9@gmail.com" method="post" enctype="multipart/form-data">
+            <!-- Input User's fullname -->
+            <label for="fullname">Full Name <span id="required-star">*</span>: </label>
+            <input type="text" name="fullname" id="fullname" required placeholder="Your Full Name">
+            <br> <br>
+            <!-- Input User's email address -->
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="name@gmail.com">
+            <br><br>
+            <!-- Input user's phonenumber -->
+            <label for="phone">Phone Number <span id="required-star">*</span>:</label>
+            <input type="tel" name="phone" id="phone" required placeholder="+2347097654356">
+            <br> <br>
+            <!-- Select User's gender -->
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <br> <br>
+            <!-- Users can select an array of their favorite programming languages -->
+            <label for="languages[]">Favorite Programming Language (You can have multiple choices):</label>
+            <br>
+            <input type="checkbox" name="languages[]" id="python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" name="languages[]" id="C">
+            <label for="C">C</label> <br>
+            <input type="checkbox" name="languages[]" id="c++">
+            <label for="c++">C++</label> <br>
+            <input type="checkbox" name="languages[]" id="js">
+            <label for="js">JavaScript</label> <br>
+            <input type="checkbox" name="languages[]" id="basic" checked>
+            <label for="basic">Basic</label> <br>
+            <input type="checkbox" name="languages[]" id="rust">
+            <label for="rust">Rust</label>
+            <br><br>
+
+            <!-- Choose level of programming experience -->
+            <label for="level">Choose your level of Experience</label><br>
+            <select name="level" id="">
+                <option value="select" disabled selected>Select a level</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+            </select>
+            <br><br>
+            <!-- Get comments from users -->
+            <label for="comment">Comment:</label><br>
+            <textarea name="comment" id="comment cols="30" rows="4" placeholder="share your comments with us..."></textarea>
+            <br> <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
