@@ -20,7 +20,7 @@ body {
   .tech-journey-desc {
     padding-left: 30px;
     padding-right: 30px;
-    background-image: url("/R.jpg");
+    background-image: url("R.jpg");
     color: #f0f0f0;
     width: 500px;
     height: 1000px;
